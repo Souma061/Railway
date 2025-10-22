@@ -124,11 +124,4 @@ window.addEventListener('load', () => {
   }, 100);
 });
 
-const themeTogglebtn = document.querySelector('.theme-toggle');
-if (themeTogglebtn) {
-  themeTogglebtn.addEventListener('click', () => {
-    document.body.classList.toggle('dark-theme');
-  });
-} else {
-  console.warn('Theme toggle button not found');
-}
+
