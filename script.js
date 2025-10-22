@@ -11,25 +11,25 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
-// Theme Toggle Functionality
-const themeToggle = document.querySelector('.theme-toggle');
-const body = document.body;
+// // Theme Toggle Functionality
+// const themeToggle = document.querySelector('.theme-toggle');
+// const body = document.body;
 
-// Check for saved theme preference or default to light mode
-const currentTheme = localStorage.getItem('theme') || 'light';
-if (currentTheme === 'dark') {
-  body.classList.add('dark-mode');
-}
+// // Check for saved theme preference or default to light mode
+// const currentTheme = localStorage.getItem('theme') || 'light';
+// if (currentTheme === 'dark') {
+//   body.classList.add('dark-mode');
+// }
 
-if (themeToggle) {
-  themeToggle.addEventListener('click', () => {
-    body.classList.toggle('dark-mode');
+// if (themeToggle) {
+//   themeToggle.addEventListener('click', () => {
+//     body.classList.toggle('dark-mode');
 
-    // Save theme preference
-    const theme = body.classList.contains('dark-mode') ? 'dark' : 'light';
-    localStorage.setItem('theme', theme);
-  });
-}
+//     // Save theme preference
+//     const theme = body.classList.contains('dark-mode') ? 'dark' : 'light';
+//     localStorage.setItem('theme', theme);
+//   });
+// }
 
 // Mobile menu toggle
 const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
@@ -123,5 +123,3 @@ window.addEventListener('load', () => {
     document.body.style.opacity = '1';
   }, 100);
 });
-
-
