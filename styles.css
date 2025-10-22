@@ -5,6 +5,14 @@
   box-sizing: border-box;
 }
 
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  touch-action: manipulation;
+}
+
 :root {
   --primary-color: #2563eb;
   --secondary-color: #1e40af;
@@ -81,12 +89,16 @@ body {
   background-color: var(--light-bg);
   overflow-x: hidden;
   transition: background-color 0.3s ease, color 0.3s ease;
+  min-width: 320px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .container {
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 2rem;
+  width: 100%;
 }
 
 /* Navigation */
@@ -706,10 +718,20 @@ body.dark-mode .theme-toggle .moon-icon {
 }
 
 @media (max-width: 768px) {
+  html {
+    overflow-x: hidden;
+  }
+
+  body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
   .navbar .container {
     flex-direction: row;
     justify-content: space-between;
     padding: 1rem;
+    width: 100%;
   }
 
   .nav-brand h1 {
