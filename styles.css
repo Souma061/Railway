@@ -1,4 +1,4 @@
-/* Reset & Base Styles */
+
 * {
   margin: 0;
   padding: 0;
@@ -32,7 +32,6 @@ html {
   --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
 }
 
-/* Dark Mode Variables */
 body.dark-mode {
   --light-bg: #0f172a;
   --card-bg: #1e293b;
@@ -101,7 +100,7 @@ body {
   width: 100%;
 }
 
-/* Navigation */
+
 .navbar {
   background: rgba(255, 255, 255, 0.98);
   backdrop-filter: blur(10px);
@@ -168,7 +167,7 @@ body {
   width: 100%;
 }
 
-/* Mobile Menu Toggle */
+
 .mobile-menu-toggle {
   display: none;
   flex-direction: column;
@@ -223,7 +222,6 @@ body {
   box-shadow: var(--shadow-md);
 }
 
-/* Theme Toggle Button */
 .theme-toggle {
   background: transparent;
   border: 2px solid var(--text-secondary);
